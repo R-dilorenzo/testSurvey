@@ -49,6 +49,7 @@
   },
   "devDependencies": {
     "concurrently": "^7.6.0",
+    "json-server": "^0.17.1",
     "sass": "^1.56.1"
   }
 }
