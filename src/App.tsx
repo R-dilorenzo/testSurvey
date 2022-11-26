@@ -1,58 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import { Button, Collapse, Input } from "./Components";
+import Routes from "./Routes";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
-  );
+	return (
+		<div>
+			<Routes />
+			{/* Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim minus perferendis magni tenetur aliquam,
+			pariatur cum officia quis quaerat consequuntur minima quisquam nam debitis dicta veritatis! Sed, voluptates
+			consequatur! Itaque.
+			<Button>some txt</Button>
+			<Button disabled>some txt</Button>
+			<Button loading>some txt</Button>
+			<Button block>some txt</Button>
+			<br />
+			<Input />
+			<Input label="test label" />
+			<Input label="test label" clearable />
+			<br />
+			<Button onClick={() => setVisible(!visible)}>toggle</Button>
+			<Collapse isShow={visible} collapseDuration={250}>
+				text
+			</Collapse> */}
+		</div>
+	);
 }
 
 export default App;

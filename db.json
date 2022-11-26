@@ -1,0 +1,126 @@
+{
+  "survey": {
+    "name": "Test survey"
+  },
+  "questions": [
+    {
+      "surveyId": "YJRP16",
+      "question": "Question One?",
+      "textCorrectAnswer": "text answered correct! (one)",
+      "textWrongAnswer": "text answered wrong! (one)",
+      "answers": [
+        {
+          "answersId": "7YFIYF",
+          "answer": "First answer (A)",
+          "isCorrect": false,
+          "point": 0
+        },
+        {
+          "answersId": "GCLLBK",
+          "answer": "Second answer (A)",
+          "isCorrect": true,
+          "point": 2
+        },
+        {
+          "answersId": "XVEARS",
+          "answer": "Third answer (A)",
+          "isCorrect": false,
+          "point": -1
+        }
+      ]
+    },
+    {
+      "surveyId": "VCFHHF",
+      "question": "Question Two?",
+      "textCorrectAnswer": "",
+      "textWrongAnswer": "",
+      "answers": [
+        {
+          "answersId": "HQOXIB",
+          "answer": "First answer (B)",
+          "isCorrect": false,
+          "point": 0
+        },
+        {
+          "answersId": "E986ZD",
+          "answer": "Second answer (B)",
+          "isCorrect": false,
+          "point": 0
+        },
+        {
+          "answersId": "KHAT86",
+          "answer": "Third answer (B)",
+          "isCorrect": true,
+          "point": 1
+        }
+      ]
+    },
+    {
+      "surveyId": "JVPW17",
+      "question": "Question three?",
+      "textCorrectAnswer": "",
+      "textWrongAnswer": "",
+      "answers": [
+        {
+          "answersId": "GLNXZH",
+          "answer": "First answer (C)",
+          "isCorrect": false,
+          "point": -1
+        },
+        {
+          "answersId": "UYSH7M",
+          "answer": "Second answer (C)",
+          "isCorrect": false,
+          "point": -2
+        },
+        {
+          "answersId": "E8BRFJ",
+          "answer": "Third answer (C)",
+          "isCorrect": true,
+          "point": 4
+        },
+        {
+          "answersId": "E8BRFJ1",
+          "answer": "Fourth answer (C)",
+          "isCorrect": false,
+          "point": 0
+        }
+      ]
+    }
+  ],
+  "userAnswers": [
+    {
+      "id": 1,
+      "fullName": "Mario Rossi",
+      "email": "rossi@mail.it",
+      "answers": [
+        "7YFIYF",
+        "KHAT86",
+        "GLNXZH"
+      ],
+      "totalPoint": 0
+    },
+    {
+      "fullName": "Roberto",
+      "email": "test@email.com",
+      "answers": [
+        "7YFIYF",
+        "HQOXIB",
+        "E8BRFJ"
+      ],
+      "totalPoint": 4,
+      "id": 2
+    },
+    {
+      "fullName": "Roberto 2",
+      "email": "test2@email.com",
+      "answers": [
+        "7YFIYF",
+        "KHAT86",
+        "E8BRFJ1"
+      ],
+      "totalPoint": 1,
+      "id": 3
+    }
+  ]
+}

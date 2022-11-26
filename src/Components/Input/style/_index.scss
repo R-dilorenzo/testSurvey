@@ -1,0 +1,101 @@
+@use "../../../style/index" as *;
+@import "./mixin";
+
+$input-prefix: "input";
+
+.#{$input-prefix} {
+	position: relative;
+	box-sizing: border-box;
+	color: $text-color;
+	margin-top: 40px;
+
+	input {
+		@include input-default();
+	}
+
+	&_isClearable {
+		input {
+			padding-right: 30px;
+		}
+	}
+
+	.input__label {
+		position: absolute;
+		top: 3px;
+		left: 15px;
+		transition: all 200ms ease-in-out;
+		color: $primary-color;
+	}
+
+	.input__label-active {
+		top: -30px;
+		left: 8px;
+	}
+
+	&__suffix {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 1;
+		margin: 0 8px;
+	}
+
+	&__suffix {
+		right: 0;
+	}
+
+	&__clear-btn {
+		display: inline-block;
+		color: rgba(0, 0, 0, 0.25);
+		width: 14px;
+		height: 14px;
+		position: relative;
+		top: 2px;
+		cursor: pointer;
+	}
+
+	.input__input {
+		font-size: $input-md-font-size;
+		height: $input-md-height;
+		line-height: $input-md-height;
+	}
+
+	.input__label {
+		font-size: $input-md-font-size;
+	}
+
+	&__clear-btn {
+		transform: scale(0.8);
+	}
+
+	&_disabled {
+		@include input-default-disabled();
+	}
+
+	.input__line {
+		position: absolute;
+		bottom: 0;
+		display: block;
+		width: 100%;
+	}
+	.input__line:after {
+		display: block;
+		content: "";
+		border-bottom: solid 2px $primary-color;
+		transform: scaleX(0);
+		transition: transform 250ms ease-in-out;
+	}
+	&:focus-within {
+		.input__line:after {
+			transform: scaleX(1);
+		}
+		.input__label {
+			top: -30px;
+			left: 8px;
+		}
+	}
+
+	.input__line-active:after {
+		transform: scaleX(1);
+	}
+}

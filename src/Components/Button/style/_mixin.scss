@@ -1,0 +1,38 @@
+@use "../../../style/index" as *;
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes half-rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(180deg);
+	}
+}
+
+@mixin loader() {
+	display: inline-block;
+	width: 0.625rem;
+	height: 0.625rem;
+	position: relative;
+	border-width: 2px;
+	border-color: currentColor currentColor transparent transparent;
+	border-style: solid;
+	border-radius: 50%;
+	animation: rotate 1s infinite linear;
+}
+
+@mixin btn-size($padding, $font-size, $height) {
+	padding: $padding;
+	font-size: $font-size;
+	height: $height;
+}

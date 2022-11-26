@@ -1,0 +1,12 @@
+// Main 
+$primary-color: #325A8A !default;
+$border-primary-color: #104587 !default;
+$hover-primary-color: #4775AE !default;
+$active-primary-color: #558cd0 !default;
+
+:export {
+    primaryColor: $primary-color;
+    borderPrimaryColor: $border-primary-color;
+    hoverPrimaryColor: $hover-primary-color;
+    activePrimaryColor: $active-primary-color;
+}

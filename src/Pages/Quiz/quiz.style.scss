@@ -1,0 +1,106 @@
+@use "../../style/index" as *;
+
+$hover-answer-color: rgba(50, 90, 138, 15%);
+$selected-answer-color:  rgba(50, 90, 138, 30%);
+
+.quiz {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    padding: $margin-base $margin-lg;
+
+
+    .quiz__wizard {
+        display: flex;
+        gap: 1rem;
+        align-self: start;
+
+        .wizard__item {
+            border-radius: 4px;
+            font-weight: bold;
+            padding: 0.5rem 0.875rem;
+            width: 1rem;
+            height: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &-active {
+                background-color: $primary-color;
+                border: 1px solid $border-primary-color;
+                color: $text-contrast;
+            }
+            &-missed {
+                background-color: $gray-300;
+                border: 1px solid $gray-900;
+                color: $black-color;
+            }
+            &-answered {
+                svg {
+                    fill: currentColor
+                }
+                &-success {
+                    background-color: $success-color;
+                    border: 1px solid $success-light-color;
+                    color: $black-color;
+                }
+                &-danger {
+                    background-color: $danger-color;
+                    border: 1px solid $danger-light-color;
+                    color: $black-color;
+                }
+            }
+        }
+    }
+
+    .quiz__question {
+        font-size: $font-size-lg;
+        font-weight: bold;
+    }
+
+    .quiz__answers {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        width: 100%;
+
+        .answer__item {
+            background: $white-color;
+            border: 1px solid $border-primary-color;
+            padding: $margin-base $margin-lg;
+            border-radius: 1rem;
+            transition: all 200ms ease-in-out;
+
+            &:hover {
+                background: $hover-answer-color;
+                cursor: pointer;
+            }
+
+            &-selected {
+                background-color: $selected-answer-color;
+            }
+        }
+    }
+
+    .quiz__solution {
+        width: 100%;
+        min-height: 40px;
+
+        .quiz__answerText {
+            align-self: flex-start;
+        }
+    }
+}
+.answerText {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;   
+
+    &-danger  {
+        color: $danger-color;
+    }
+    &-success  {
+        color: $success-color;
+    }
+}
