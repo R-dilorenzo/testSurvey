@@ -3,19 +3,23 @@
 Clone the project
 
 ```bash
-  git clone https://github.com/R-dilorenzo/testSurvey.git
+git clone https://github.com/R-dilorenzo/testSurvey.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd testSurvey
+cd testSurvey
 ```
 
-Install dependencies and start
+Install dependencies
 
 ```bash
-  npm install
-  
-  npm run start
+npm install
+```
+
+start
+
+```bash
+npm start
 ```
